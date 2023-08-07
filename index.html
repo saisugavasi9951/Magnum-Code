@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>Magnum Page</title>
+  <!--CSS Link-->
+  <link rel="stylesheet" href="styles.css">
+  <!--Poppins font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <!--Bootstrap Head Link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+</head>
+
+<body>
+  <!--Section Nav-->
+  <nav id="navBg" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./images/nav-logo.svg" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-item-right" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="navLinkProduct" class="nav-link" aria-current="page" href="#">Product</a>
+          </li>
+          <li class="nav-item">
+            <a id="navLinkAbout" class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a id="navLinkBlog" class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a id="navLinkFAQ" class="nav-link">FAQ</a>
+          </li>
+          <li>
+            <span class="btn">Get Started <img class="btn-arrow" src="./images/cta-arrow.svg" /> </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Section banner-->
+  <div class="banner-container-fluid container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-5 section-1-container w3-container w3-center w3-animate-right">
+          <h1 class="banner-sec1-title"><span class="banner-sec1-title-bold">Build your credit</span> and
+            improve your FICO Score
+            with <span class="banner-sec1-title-bold">MAGNUM</span></h1>
+          <span class="btn">Get Started <img src="./images/cta-arrow.svg" /> </span>
+        </div>
+        <div class="col-12 col-md-7 slider-mobile">
+          <div class="slide-show-container">
+            <div class="image-container w3-container w3-center w3-animate-zoom">
+              <img id="personImage" src="./images/banner-person-1.png" />
+            </div>
+            <div class="text-navigation-container">
+              <div class="text-container">
+                <div>
+                  <img class="text-tip-line" src="./images/banner-tip.svg" />
+                </div>
+                <div id="textClass" class="person-text">
+                  <p> <span id="personTitle">I’m applying for a large</span>
+                    <span id="personStrongText">PERSONAL LOAN.</span><span id="lastText"></span>
+                  </p>
+                  <p class="person-common-text">Help improve my credit score <img class="small-arrow"
+                      src="./images/small-arrow (2).svg" /></p>
+                </div>
+              </div>
+              <div class="navigation-container">
+                <div>
+                  <button class="left-arrow-container" id="prevBtn"><img class="left-arrow"
+                      src="./Images/arrow.svg" /></button>
+                </div>
+                <div class="navigation-status">
+                  <p><span id="navStatus">1</span><span class="nav-status-text">/6</span></p>
+                </div>
+                <div class="right-arrow-container">
+                  <button class="right-arrow-container" id="nextBtn"><img class="right-arrow"
+                      src="./Images/arrow.svg" /></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Section credit score today-->
+  <div id="creditScoreToday" class="container-fluid">
+    <div class="container credit-score-container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Title and description initially hidden, gradually revealed when section is in view -->
+          <h1 class="credit-today-title w3-animate-bottom">Start improving your <span class="credit-score-bold">credit
+              score</span> today</h1>
+          <p class="credit-today-des w3-animate-bottom">Build your credit score quickly, whatever your need is</p>
+        </div>
+        <div class="col-12 col-md-6" id="creditScoreTodayCard1">
+          <div class="credit-score-today-card">
+            <p class="credit-score-today-text"><span class="magnum-bold">MAGNUM</span> accounts report up to $10,000 of
+              installment credit to the 3 major credit bureaus. Maximize your amount
+              of credit. Boost your credit score.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6" id="creditScoreTodayCard2">
+          <div class="credit-score-today-card">
+            <p class="credit-score-today-text"><span class="magnum-bold">MAGNUM</span> accounts report up to $10,000 of
+              installment credit to the 3 major credit bureaus. Maximize your amount
+              of credit. Boost your credit score.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Open Account with Magnum Section-->
+  <div class="container-fluid" id="openAccountSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="account-title ">Get Started with <strong>MAGNUM</strong></h1>
+          <p class="account-dec">Open an account in minutes.<br>How credit building works</p>
+        </div>
+        <!--Plan Crads-->
+        <!--Plan Crad 1-->
+        <div class="col-12 col-sm-6 col-md-3 plan-card-container" id="clockCard">
+          <div class="plan-card-logo-bg">
+            <img class="plan-card-logo" src="./Images/sec-3-clock.svg" />
+          </div>
+          <h3 class="plan-card-title w3-animate-bottom">Apply for an account<br>
+            in just minutes</h3>
+          <p class="plan-card-des w3-animate-bottom">No hard credit pull on your<br> credit profile. Accounts are<br>
+            FDIC-insured.</p>
+        </div>
+        <!--Plan Crad 2-->
+        <div class="col-12 col-sm-6 col-md-3 plan-card-container" id="planCard">
+          <div class="plan-card-logo-bg">
+            <img class="plan-card-logo" src="./Images/sec-3-hand-right.svg" />
+          </div>
+          <h3 class="plan-card-title">Pick a Plan</h3>
+          <p class="plan-card-des">Pick an account that fits your<br class="br-empty"> objectives and budget.</p>
+        </div>
+        <!--Plan Crad 3-->
+        <div class="col-12 col-sm-6 col-md-3 plan-card-container" id="monthCard">
+          <div class="plan-card-logo-bg">
+            <img class="plan-card-logo" src="./Images/sec-3-calender.svg" />
+          </div>
+          <h3 class="plan-card-title">Make on-time monthly<br class="br-empty"> payments to build a<br class="br-empty">
+            positive credit history</h3>
+          <p class="plan-card-des">Free FICO scores monthly to<br> track your progress.</p>
+        </div>
+        <!--Plan Crad 4-->
+        <div class="col-12 col-sm-6 col-md-3 plan-card-container" id="cancelCard">
+          <div class="plan-card-logo-bg">
+            <img class="plan-card-logo" src="./Images/sec-3-hand-worong.svg" />
+          </div>
+          <h3 class="plan-card-title">Cancel anytime for free<br class="br-empty">
+            or build your length of<br class="br-empty">
+            credit history</h3>
+          <p class="plan-card-des">Build up to 120 months of<br> payment history.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Fico Section -->
+  <div id="ficoScoreSection" class="container-fluid">
+    <div class="container fico-container">
+      <div class="row">
+        <div class="col-12 col-md-5 fico-title-container">
+          <div class="fico-title-sub-con">
+            <h1 class="fico-title"><strong>MAGNUM</strong> accounts can positively impact factors that determine
+              <strong>90% of<br> your FICO Score</strong>
+            </h1>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 fico-chart-container">
+          <img class="fico-image" src="./images/sec-5-pie-chart.png" />
+        </div>
+        <div class="col-6 col-md-4 fico-list-container">
+          <ul class="list-ul">
+            <li class="list-style list-1">Payment History (35%)</li>
+            <li class="list-style list-2">Amount of Credit (30%)</li>
+            <li class="list-style list-3">Length of History (15%)</li>
+            <li class="list-style list-4">Credit Mix (10%)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Best Option Section-->
+  <div id="bestOptionSection" class="container-fluid">
+    <div class="container options-main-container">
+      <div class="row">
+        <div class="col-12 col-md-6" id="optionsTitleContainer">
+          <h1 class="options-title"><strong>MAGNUM</strong> may not be<br>
+            your best option if</h1>
+        </div>
+        <!--Options Cards-->
+        <div class="col-12 col-md-6">
+          <div id="optionOne" class="option-container">
+            <div class="wrong-container">
+              <img class="wrong-img" src="./images/card-wrong-se6.svg" />
+            </div>
+            <p class="option-text">You’re applying for a home loan soon<br> and are concerned about your<br>
+              <strong>debt-to-income ratio</strong>
+            </p>
+          </div>
+          <div id="optionTwo" class="option-container">
+            <div class="wrong-container">
+              <img class="wrong-img" src="./images/card-wrong-se6.svg" />
+            </div>
+            <p class="option-text">You’re applying for a home loan soon<br> and are concerned about your<br>
+              <strong>debt-to-income ratio</strong>
+            </p>
+          </div>
+          <div id="optionThree" class="option-container">
+            <div class="wrong-container">
+              <img class="wrong-img" src="./images/card-wrong-se6.svg" />
+            </div>
+            <p class="option-text">You’re applying for a home loan soon<br> and are concerned about your<br>
+              <strong>debt-to-income ratio</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!--Why is Credit-->
+  <div class="container-fluid" id="whyCreditImportant">
+    <div class="container why-credit-container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="why-credit-title animate-on-scroll">Why Is <strong>Credit Important</strong>?</h1>
+          <p class="why-credit-des animate-on-scroll">Credit helps you to get the things you need now, like a loan for a
+            car or a credit card, based on promise<br class="br-empty"> to pay later. Working to improve your credit
+            helps ensure you'll qualify for loans when you need them.</p>
+        </div>
+        <div class="col-12 video-container">
+          <div id="whyCreditVideoBg" class="animate-on-scroll">
+            <img src="./images/play-icon.svg" class="play-icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--How can Help with TAbs -->
+  <div class="container-fluid" id="magnumHelpCardsTab">
+    <div class="container container__tabbar">
+      <div class="row">
+        <div class="col-12 magnum-help-title-container">
+          <h1 class="magnum-help-title">How <strong>MAGNUM</strong> can help you</h1>
+          <p class="magnum-help-des">Select your Plan</p>
+        </div>
+        <div class="tab-slider--nav">
+          <ul id="tab-slider-id" class="tab-slider--tabs">
+            <li rel="tab1" onclick="openTab(event, 'tab1')">
+              <div class="free-base-credit-container">
+                <h4 class="sec-credit-title">Free based Credit</h4>
+                <div class="sec8-line-arrow">
+                  <img class="hr-line" src="./Images/credit-line-ver.svg" />
+                  <img class="done-arrow" src="./Images/credit-arrow.svg" />
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img class="sec-plan-middle-arrow" src="./Images/credit-line-ver.svg" />
+              </div>
+            </li>
+            <li rel="tab2" onclick="openTab(event, 'tab2')">
+              <div class="free-base-credit-container">
+                <h1 class="sec-deposite-title">Free with Deposite</h1>
+                <div class="sec8-line-arrow">
+                  <img class="hr-line-deposite" src="./Images/Line.svg" />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-slider--container">
+          <div id="tab1" class="tab-slider--body">
+            <div class="col-12 col-md-4 price-card-main-container" id="magnumCard49">
+              <div class="price-card-container">
+                <p class="plan-price">MAGNUM 49</p>
+                <div class="sec8-plan-price-container">
+                  <h1 class="plan-card-price">$49/<sub>mo</sub></h1>
+                  <img class="plan-card-line-1" src="./Images/plan-card-line-1.svg" />
+                  <div>
+                    <h1 class="plan-card-price2">$2,500</h1>
+                    <p class="plan-card-price-des">Installment account reported</p>
+                  </div>
+                </div>
+                <img class="price-card-line-1" src="./Images/price-card-line-2.svg" />
+                <p class="price-card-des">Demonstrate repayment on larger</br> credit obligations</p>
+                <img src="./Images/price-card-line-3.svg" />
+                <p class="price-card-des">Build personal credit for</br> business purposes</p>
+                <img src="./Images/price-card-line-3.svg" />
+                <p class="price-card-des">Build up to 120 months of</br> payment history</p>
+                <img src="./Images/price-card-line-3.svg" />
+                <p class="price-card-des">Cancel any time without penalty</p>
+                <div class="price-btn-container">
+                  <li>
+                    <span class="btn apply-now-btn">Apply Now <img class="btn-arrow" src="./images/cta-arrow.svg" />
+                    </span>
+                  </li>
+                  <li>
+                    <span class="btn learn-more-btn">Learn More <img class="btn-arrow" src="./images/cta-arrow.svg" />
+                    </span>
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 price-card-main-container" id="magnumCard99">
+              <div class="price-card-container">
+                <p class="plan-price">MAGNUM 99</p>
+                <div class="sec8-plan-price-container">
+                  <h1 class="plan-card-price">$99/<sub>mo</sub></h1>
+                  <img class="plan-card-line-1" src="./Images/plan-card-line-1.svg" />
+                  <div>
+                    <h1 class="plan-card-price2">$5,000</h1>
+                    <p class="plan-card-price-des">Installment account reported</p>
+                  </div>
+                </div>
+                <img class="price-card-line-1" src="./Images/price-card-line-2.svg" />
+                <p class="price-card-des">Demonstrate repayment on larger</br> credit obligations</p>
+                <img src="./Images/price-card-line-3.svg" />
+                <p class="price-card-des">Build personal credit for</br> business purposes</p>
+                <img src="./Images/price-card-line-3.svg" />
+                <p class="price-card-des">Build up to 120 months of</br> payment history</p>
+                <img src="./Images/price-card-line-3.svg" />
+                <p class="price-card-des">Cancel any time without penalty</p>
+                <div class="price-btn-container">
+                  <li>
+                    <span class="btn apply-now-btn">Apply Now <img class="btn-arrow" src="./images/cta-arrow.svg" />
+                    </span>
+                  </li>
+                  <li>
+                    <span class="btn learn-more-btn">Learn More <img class="btn-arrow" src="./images/cta-arrow.svg" />
+                    </span>
+                  </li>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3 price-card-main-container" id="magnumCard199">
+              <div class="price-card-container">
+                <p class="plan-price">MAGNUM 199</p>
+                <div class="sec8-plan-price-container">
+                  <h1 class="plan-card-price">$199/<sub>mo</sub></h1>
+                  <img class="plan-card-line-1" src="./Images/plan-card-line-1.svg" />
+                  <div>
+                    <h1 class="plan-card-price2">$10,000</h1>
+                    <p class="plan-card-price-des">Installment account reported</p>
+                  </div>
+                </div>
+                <img class="price-card-line-1" src="./Images/price-card-line-2.svg" />
+                <p class="price-card-des">Demonstrate repayment on larger</br> credit obligations</p>
+                <img src="./Images/price-card-line-3.svg" />
+                <p class="price-card-des">Build personal credit for</br> business purposes</p>
+                <img src="./Images/price-card-line-3.svg" />
+                <p class="price-card-des">Build up to 120 months of</br> payment history</p>
+                <img src="./Images/price-card-line-3.svg" />
+                <p class="price-card-des">Cancel any time without penalty</p>
+                <div class="price-btn-container">
+                  <li>
+                    <span class="btn apply-now-btn">Apply Now <img class="btn-arrow" src="./images/cta-arrow.svg" />
+                    </span>
+                  </li>
+                  <li>
+                    <span class="btn learn-more-btn">Learn More <img class="btn-arrow" src="./images/cta-arrow.svg" />
+                    </span>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab2" class="tab-slider--body">
+          <div class="col-12 col-md-4 price-card-main-container" id="magnumCard299">
+            <div class="price-card-container">
+              <p class="plan-price">MAGNUM 299</p>
+              <div class="sec8-plan-price-container">
+                <h1 class="plan-card-price">$229/<sub>mo</sub></h1>
+                <img class="plan-card-line-1" src="./Images/plan-card-line-1.svg" />
+                <div>
+                  <h1 class="plan-card-price2">$5,500</h1>
+                  <p class="plan-card-price-des">Installment account reported</p>
+                </div>
+              </div>
+              <img class="price-card-line-1" src="./Images/price-card-line-2.svg" />
+              <p class="price-card-des">Demonstrate repayment on larger</br> credit obligations</p>
+              <img src="./Images/price-card-line-3.svg" />
+              <p class="price-card-des">Build personal credit for</br> business purposes</p>
+              <img src="./Images/price-card-line-3.svg" />
+              <p class="price-card-des">Build up to 120 months of</br> payment history</p>
+              <img src="./Images/price-card-line-3.svg" />
+              <p class="price-card-des">Cancel any time without penalty</p>
+              <div class="price-btn-container">
+                <li>
+                  <span class="btn apply-now-btn">Apply Now <img class="btn-arrow" src="./images/cta-arrow.svg" />
+                  </span>
+                </li>
+                <li>
+                  <span class="btn learn-more-btn">Learn More <img class="btn-arrow" src="./images/cta-arrow.svg" />
+                  </span>
+                </li>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 price-card-main-container" id="magnumCard99">
+            <div class="price-card-container">
+              <p class="plan-price">MAGNUM 599</p>
+              <div class="sec8-plan-price-container">
+                <h1 class="plan-card-price">$699/<sub>mo</sub></h1>
+                <img class="plan-card-line-1" src="./Images/plan-card-line-1.svg" />
+                <div>
+                  <h1 class="plan-card-price2">$11,000</h1>
+                  <p class="plan-card-price-des">Installment account reported</p>
+                </div>
+              </div>
+              <img class="price-card-line-1" src="./Images/price-card-line-2.svg" />
+              <p class="price-card-des">Demonstrate repayment on larger</br> credit obligations</p>
+              <img src="./Images/price-card-line-3.svg" />
+              <p class="price-card-des">Build personal credit for</br> business purposes</p>
+              <img src="./Images/price-card-line-3.svg" />
+              <p class="price-card-des">Build up to 120 months of</br> payment history</p>
+              <img src="./Images/price-card-line-3.svg" />
+              <p class="price-card-des">Cancel any time without penalty</p>
+              <div class="price-btn-container">
+                <li>
+                  <span class="btn apply-now-btn">Apply Now <img class="btn-arrow" src="./images/cta-arrow.svg" />
+                  </span>
+                </li>
+                <li>
+                  <span class="btn learn-more-btn">Learn More <img class="btn-arrow" src="./images/cta-arrow.svg" />
+                  </span>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Resources Section-->
+  <div class="container-fluid" id="resourcesSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="resources-title">
+            Resources
+          </h1>
+        </div>
+        <div class="col-12">
+          <div class="carousel-wrapper">
+            <div class="customPreviousBtn"><img class="left-arrow" src="./images/arrow.svg" /></div>
+            <div class="owl-carousel owl-theme">
+              <div class="resources-card">
+                <img class="blog-image" src="./images/blog-1-image.png" />
+                <h3 class="blog-water-drop">Blog</h3>
+                <p class="blog-water-des">Revolving Credit Simplified: The Basics, Benefits, and Examples</p>
+                <div class="blog-cta-container">
+                  <a class="read-more-text">Read More</a>
+                  <button class="blog-cta"><img src="./images/arrow.svg" /></button>
+                </div>
+              </div>
+              <div class="resources-card">
+                <h3 class="blog-water-drop">Blog</h3>
+                <p class="blog-water-des">Austin Capital Bank CEO Appointed to Consumer Financial Protection Bureau
+                  Advisory Council</p>
+                <p class="blog-water-des-1">We all must look at the role we play in mitigating the spread and impact of
+                  viruses to ensure a better outcome. Due to concerns for the safety and health regarding the...</p>
+                <div class="blog-cta-container">
+                  <a class="read-more-text">Read More</a>
+                  <button class="blog-cta"><img class="blog-arrow" src="./images/arrow.svg" /></button>
+                </div>
+              </div>
+              <div class="resources-card">
+                <img class="blog-image" src="./images/blog-2-image.png" />
+                <h3 class="blog-water-drop">Blog</h3>
+                <p class="blog-water-des">Revolving Credit Simplified: The Basics, Benefits, and Examples</p>
+                <div class="blog-cta-container">
+                  <a class="read-more-text">Read More</a>
+                  <button class="blog-cta"><img src="./images/arrow.svg" /></button>
+                </div>
+              </div>
+              <div class="resources-card">
+                <img class="blog-image" src="./images/ourstory_new-image.jpg" />
+                <h3 class="blog-water-drop">Blog</h3>
+                <p class="blog-water-des">Revolving Credit Simplified: The Basics, Benefits, and Examples</p>
+                <div class="blog-cta-container">
+                  <a class="read-more-text">Read More</a>
+                  <button class="blog-cta"><img src="./images/arrow.svg" /></button>
+                </div>
+              </div>
+              <div class="resources-card">
+                <img class="blog-image" src="./images/our-story.jpeg" />
+                <h3 class="blog-water-drop">Blog</h3>
+                <p class="blog-water-des">Revolving Credit Simplified: The Basics, Benefits, and Examples</p>
+                <div class="blog-cta-container">
+                  <a class="read-more-text">Read More</a>
+                  <button class="blog-cta"><img src="./images/arrow.svg" /></button>
+                </div>
+              </div>
+              <div class="resources-card">
+                <img class="blog-image" src="./images/blog-1-image.png" />
+                <h3 class="blog-water-drop">Blog</h3>
+                <p class="blog-water-des">Revolving Credit Simplified: The Basics, Benefits, and Examples</p>
+                <div class="blog-cta-container">
+                  <a class="read-more-text">Read More</a>
+                  <button class="blog-cta"><img src="./images/arrow.svg" /></button>
+                </div>
+              </div>
+              <div class="resources-card">
+                <h3 class="blog-water-drop">Blog</h3>
+                <p class="blog-water-des">Austin Capital Bank CEO Appointed to Consumer Financial Protection Bureau
+                  Advisory Council</p>
+                <p class="blog-water-des-1">We all must look at the role we play in mitigating the spread and impact of
+                  viruses to ensure a better outcome. Due to concerns for the safety and health regarding the...</p>
+                <div class="blog-cta-container">
+                  <a class="read-more-text">Read More</a>
+                  <button class="blog-cta"><img class="blog-arrow" src="./images/arrow.svg" /></button>
+                </div>
+              </div>
+            </div>
+            <div class="customNextBtn"><img src="./images/arrow.svg" /> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Start with Magnum Section-->
+  <div id="startWithMagnum" class="container-fluid">
+    <div class="container" id="startWithMagnumAnimation">
+      <div class="row">
+        <div class="col-12">
+          <div class="start-with-magnum-container">
+            <div class="start-with-magnum-mask">
+              <h1 class="sec-10-title">Get Started with <strong>MAGNUM</strong></h1>
+              <p class="start-with-magnum-des">Open an account in minutes</p>
+              <p><span class="btn">Get Started <img class="btn-arrow" src="./images/cta-arrow.svg" /> </span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Section Footer-->
+  <div id="footerSection" class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 site-list-container">
+          <div class="fooetr-product-container">
+            <p class="list-item">Product</p>
+            <p class="list-sub-item">Fee based credit</p>
+            <p class="list-sub-item">Fee with Deposit</p>
+          </div>
+          <p class="list-item">About Us</p>
+          <p class="list-item">Blog</p>
+          <p class="list-item">FAQs</p>
+          <div>
+            <img class="footer-v-line" src="./Images/footer-small-line.svg" />
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="connect-us-container">
+            <h1 class="connect-us-title">Connect with US</h1>
+            <div class="social-icons-container">
+              <div class="icon-container">
+                <img src="./Images/facebook.svg" />
+              </div>
+              <div class="icon-container">
+                <img src="./Images/linkedin.svg" />
+              </div>
+              <div class="icon-container">
+                <img src="./Images/twitter.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="footer-h-line-container">
+            <img class="footer-h-line" src="./Images/footer-line.svg" />
+          </div>
+        </div>
+        <div class="col-12">
+          <p class="footer-para">Account holders must be at least 18 years old and a citizen of the United States or
+            permanent resident
+            with a valid social security number. Applicants for accounts are subject to verification of identity. A
+            valid bank account or debit card account are required for payment. All loans are subject to consumer
+            report review and approval. Credit Strong is NOT a credit repair service and does not remove negative
+            credit history from your credit profile. Disclaimer: Credit profile improvement is not guaranteed.
+            Changes in your credit score reflect individually specific financial behavior and history. Failure to
+            make minimum required loan payments on-time may result in your loan payment(s) being reported as
+            delinquent to credit bureaus which may negatively impact your credit profile.</br>
+            </br>
+            Testimonial Disclaimer: Individual results may vary. Unique experiences and past performance for
+            individuals do not guarantee future results for other individuals. Testimonials may not be
+            representative of all individuals and certain individuals may have inferior results than indicated in
+            testimonials.</br>
+            </br>
+            *All ratings as of March 31, 2020</br>
+            </br>
+            Credit Strong® is a registered trademark of Austin Capital Bank SSB. FICO® is a registered Trademark of
+            Fair Isaac Corporation. Equifax® and Paynet® are registered trademarks of Equifax, Inc.
+            </br>
+            Austin Capital Bank SSB. Member FDIC. Equal Housing Lender.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Copy Right Section-->
+  <div class="container-fluid copy-right-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="copy-right">CreditStrong © 2022. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Bootstrap Body Link-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</body>
+
+</html>
