@@ -1,0 +1,1604 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(29, 34, 70, 1.0);
+}
+
+/* Nav Bar CSS */
+#navBg {
+    background-color: #151938 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 20px;
+    color: #ffffff !important;
+    background: rgba(69, 128, 192, 0.5) !important;
+    font-family: Poppins !important;
+    font-size: 12px;
+    border-radius: 0px !important;
+    transition: all 1s;
+    width: 180px;
+    height: 40px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    &:after,
+    &:before {
+        content: " ";
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        border: 0px solid #6bbefc;
+        transition: all 1s;
+    }
+
+    &:after {
+        top: -1px;
+        left: -1px;
+        border-top: 2px solid #6bbefc;
+        border-left: 2px solid #6bbefc;
+    }
+
+    &:before {
+        bottom: -1px;
+        right: -1px;
+        border-bottom: 2px solid #6bbefc;
+        border-right: 2px solid #6bbefc;
+    }
+
+    &:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+        background: rgba(0, 0, 0, .2);
+        color: #6bbefc;
+
+        &:before,
+        &:after {
+
+            width: 100%;
+            height: 100%;
+            border-color: #6bbefc;
+        }
+    }
+}
+
+.btn:hover {
+    background-color: rgba(69, 128, 192, 0.2) !important;
+}
+
+.navbar-toggler {
+    color: white !important;
+    background-color: skyblue !important;
+}
+
+#navLinkProduct {
+    width: 100px;
+    height: 40px;
+    background-size: cover;
+    font-family: Poppins;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+
+}
+
+#navLinkAbout {
+    width: 100px;
+    height: 40px;
+    background-size: cover;
+    font-family: Poppins;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+
+}
+
+#navLinkBlog {
+    width: 100px;
+    height: 40px;
+    background-size: cover;
+    font-family: Poppins;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+
+}
+
+#navLinkFAQ {
+    width: 100px;
+    height: 40px;
+    background-size: cover;
+    font-family: Poppins;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    cursor: pointer;
+
+}
+
+@media screen and (min-width: 992px) {
+    .nav-item-right {
+        display: flex;
+        justify-content: end;
+    }
+
+    .slider-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slide-show-container {
+        flex-direction: none;
+        display: none;
+    }
+}
+
+/* Banner Css */
+
+.banner-container-fluid {
+    background-color: rgba(29, 34, 70, 1.0);
+    height: 600px;
+    background-image: url("./Images/banner-g-opacity-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 99px;
+}
+
+.banner-sec1-title {
+    font-family: Poppins;
+    font-size: 40px;
+    line-height: 60px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    font-weight: 330;
+    width: 100%;
+}
+
+.banner-sec1-title-bold {
+    font-family: Poppins;
+    font-size: 44px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    line-height: 60px;
+    font-weight: 800;
+}
+
+.section-1-container {
+    align-self: center;
+}
+
+.w3-center {
+    text-align: left !important;
+}
+
+.w3-animate-right {
+    animation: animateright 0.8s !important;
+}
+
+.w3-animate-left {
+    animation: animateleft 0.8s !important;
+}
+
+.w3-animate-zoom {
+    animation: animatezoom 0.8s !important;
+}
+
+.slide-show-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-container {
+    max-width: 70%;
+}
+
+#personImage {
+    height: 100%;
+    width: 100%;
+}
+
+.text-navigation-container {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text-tip-line {
+    height: 200px;
+    width: 40px;
+    transform: rotate(180deg);
+    opacity: 0.2;
+}
+
+.text-container {
+    display: flex;
+    align-self: center;
+}
+
+#personTitle {
+    /* I’m applying */
+    width: 70%;
+    font-family: Poppins;
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none rgb(255, 255, 255);
+    line-height: 45px;
+    font-weight: 150;
+    margin-left: 8px;
+}
+
+#personStrongText {
+    font-family: Poppins;
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    line-height: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#lastText {
+    /* I’m applying */
+    width: 70%;
+    font-family: Poppins;
+    font-size: 35px;
+    color: #ffffff;
+    text-decoration: none rgb(255, 255, 255);
+    line-height: 45px;
+    font-weight: 150;
+    margin-left: 8px;
+}
+
+.person-common-text {
+    width: 315px;
+    height: 24px;
+    font-family: Poppins;
+    font-size: 16px;
+    color: #4580c0;
+    text-decoration: none solid rgb(69, 128, 192);
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.small-arrow {
+    height: 8px;
+    width: 6px;
+}
+
+.navigation-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navStatus {
+    font-family: Poppins;
+    font-size: 35px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    line-height: 48px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.navigation-status {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-status-text {
+    font-family: Poppins;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    line-height: 48px;
+    text-align: center;
+    font-weight: 600;
+    opacity: 0.4;
+}
+
+.left-arrow-container {
+    background-color: rgb(255, 255, 255, 0.2);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.6s;
+    border: 0px solid;
+}
+
+.left-arrow {
+    height: 20px;
+    width: 12px;
+    transform: rotate(180deg);
+}
+
+.right-arrow-container {
+    background-color: rgb(255, 255, 255, 0.08);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.6s;
+    border: 0px solid;
+}
+
+.right-arrow {
+    height: 20px;
+    width: 12px;
+}
+
+.left-arrow-container:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+.right-arrow-container:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+.person-text {
+    margin-left: 10px;
+}
+
+
+/* CSS credit score today */
+#creditScoreToday {
+    background-color: rgba(29, 34, 70, 1.0);
+    height: 500px;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.credit-today-title {
+    /* Start improving your */
+    font-family: Poppins;
+    font-size: 36px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    line-height: 40px;
+}
+
+.credit-score-bold {
+    font-weight: 650;
+}
+
+.credit-today-des {
+    font-family: Poppins;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 5%;
+    opacity: 0.8;
+}
+
+#creditScoreTodayCard1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.credit-score-today-card {
+    background-color: rgba(107, 190, 252, 0.04);
+    background-image: url("./images/sec2-corner-line.svg");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.credit-score-today-text {
+    /* MAGNUM accounts r... */
+    font-family: Poppins;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    width: 70%;
+
+}
+
+.magnum-bold {
+    font-weight: bold;
+}
+
+#creditScoreTodayCard2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.credit-today-title,
+.credit-today-des,
+.credit-score-today-card {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s;
+}
+
+/* Custom CSS for zooming effect */
+.zoom-in-card {
+    animation: zoom-in 0.7s;
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+
+/* Open Account CSS */
+#openAccountSection {
+    background-color: rgba(29, 34, 70, 1.0);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.account-title {
+    font-family: Poppins;
+    font-size: 34px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 15px;
+}
+
+.account-dec {
+    font-family: Poppins;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 5%;
+    opacity: 0.8;
+}
+
+.plan-card-logo-bg {
+    background-color: rgb(255, 255, 255, 0.1);
+    height: 65px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.plan-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan-card-title {
+    width: 80%;
+    opacity: 0.9;
+    font-family: Poppins;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    line-height: 26px;
+    text-align: center;
+}
+
+.plan-card-des {
+    opacity: 0.7;
+    font-family: Roboto;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    line-height: 24px;
+    text-align: center;
+    width: 80%;
+}
+
+@keyframes fadeInCard {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Add a class for each plan card to apply the animation */
+.animated-card {
+    animation: fadeInCard 0.9s ease-in-out;
+}
+
+/* Fico score CSS */
+#ficoScoreSection {
+    background-color: rgba(29, 34, 70, 1.0);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.fico-title-sub-con,
+.fico-chart-container,
+.fico-list-container {
+    opacity: 0;
+}
+
+/* CSS Animation for inner divs */
+@keyframes fadeInDiv {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Add animation to the inner divs */
+.fico-title-sub-con.w3-animate-opacity,
+.fico-chart-container.w3-animate-opacity,
+.fico-list-container.w3-animate-opacity {
+    animation: fadeInDiv 1s ease-in-out;
+    animation-fill-mode: forwards;
+    /* Retain final keyframe values after animation */
+}
+
+.fico-container {
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: url("./images/sec-5-card-corner.svg");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    border-radius: 10px;
+    width: 80%;
+    padding: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width:1020px) {
+    .fico-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.fico-title-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.fico-title-sub-con {
+    width: 87%;
+}
+
+.fico-title {
+    font-family: Poppins;
+    font-size: 36px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    line-height: 48px;
+}
+
+.list-ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.list-style {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+    opacity: 0.8;
+    font-family: Poppins;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+}
+
+.list-style:before {
+    content: "■";
+    left: 0;
+    font-size: 15px;
+    position: absolute;
+}
+
+/* Different colors for each bullet */
+.list-style:nth-child(1):before {
+    color: #147ac6;
+}
+
+.list-style:nth-child(2):before {
+    color: #4495eb;
+}
+
+.list-style:nth-child(3):before {
+    color: #6bbefc;
+}
+
+.list-style:nth-child(4):before {
+    color: #b6e0ff;
+}
+
+.fico-chart-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fico-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fico-image {
+    height: 190px;
+    width: 185px;
+}
+
+/* best Option CSS */
+#bestOptionSection {
+    background-color: rgba(29, 34, 70, 1.0);
+}
+
+.options-main-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.option-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    align-items: center;
+    padding: 6px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.wrong-container {
+    height: 24px;
+    width: 24px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.wrong-img {
+    height: 16px;
+    width: 16px;
+}
+
+.option-text {
+    opacity: 0.8;
+    font-family: Poppins;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    line-height: 25px;
+    width: 80%;
+    padding: 10px;
+}
+
+#optionsTitleContainer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.options-title {
+    font-family: Poppins;
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    line-height: 36px;
+}
+
+/* Why credit is important css */
+#whyCreditImportant {
+    background-color: rgba(29, 34, 70, 1.0);
+}
+
+.why-credit-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.why-credit-title {
+    font-family: Poppins;
+    font-size: 36px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+    line-height: 38px;
+    padding-top: 100px;
+    margin-bottom: 20px;
+}
+
+.why-credit-des {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 0px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+#whyCreditVideoBg {
+    background-image: url('./images/section-7-video-bg.png');
+    height: 350px;
+    width: 65%;
+    background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    transition: width;
+    transition-property: width, height;
+    transition-duration: 1s;
+    transition-delay: 0.1s;
+    opacity: 0.8;
+}
+
+.play-icon {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#whyCreditVideoBg:hover {
+    width: 80%;
+    height: 400px;
+
+}
+
+
+/* Magnum Can help */
+#magnumCanHelp {
+    background-color: rgba(29, 34, 70, 1.0);
+}
+
+.magnum-help-title {
+    font-family: Poppins;
+    font-size: 36px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+    line-height: 38px;
+    padding-top: 50px;
+    margin-bottom: 15px;
+}
+
+.magnum-help-des {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.magnum-help-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.free-base-credit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.sec-credit-title {
+    font-size: 16px;
+    color: #87c2f9;
+    font-weight: bold;
+    font-family: Poppins;
+}
+
+.sec-deposite-title {
+    font-size: 16px;
+    color: #ffffff;
+    opacity: 0.6;
+}
+
+.sec8-line-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hr-line {
+    height: 2px;
+    width: 190px;
+}
+
+.done-arrow {
+    height: 8px;
+    width: 16px;
+}
+
+.sec-plan-middle-arrow {
+    height: 25px;
+    width: 1.5px;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.hr-line-deposite {
+    height: 2px;
+    width: 190px;
+    opacity: 0.5;
+}
+
+.price-card-main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.price-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.08);
+    height: 380px;
+    background-image: url("./Images/sec8-card-bg.svg");
+    background-size: cover;
+    border: 1.5px #4580c0 solid;
+    border-radius: 4px;
+    stroke-width: 1;
+    margin-top: 25px;
+}
+
+.plan-price {
+    font-size: 12px;
+    font-weight: bold;
+    color: #87c2f9;
+    background-color: #1d2246;
+    height: 25px;
+    width: 100px;
+    text-align: center;
+    padding-top: 3px;
+    border: 1px #87c2f9 solid;
+    border-radius: 2px;
+}
+
+.sec8-plan-price-container {
+    display: flex;
+    align-items: center;
+}
+
+.plan-card-price {
+    font-family: Poppins;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    line-height: 20px;
+    text-align: center;
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+.plan-card-line-1 {
+    width: 1px;
+    height: 40px;
+    opacity: 0.5;
+    margin-right: 10px;
+}
+
+.plan-card-price2 {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-top: 12px;
+}
+
+.plan-card-price-des {
+    opacity: 0.9;
+    font-size: 12px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+}
+
+.price-card-des {
+    opacity: 0.7;
+    font-family: Poppins;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    line-height: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.price-card-line-1 {
+    opacity: 0.5;
+}
+
+.price-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.apply-now-btn {
+    width: 130px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.learn-more-btn {
+    width: 130px;
+    margin-top: 5px;
+    background: rgba(69, 128, 192, 0.1) !important;
+}
+
+
+/* Add this CSS to your existing CSS file or style tag */
+.w3-animate-bottom {
+    animation: animateBottom 1s;
+}
+
+@keyframes animateBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.w3-animate-opacity-new {
+    animation: animateOpacity 2.5s;
+}
+
+@keyframes animateOpacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* resourcesSection */
+#resourcesSection {
+    background-color: rgba(29, 34, 70, 1.0);
+}
+
+.resources-blogs {
+    background-color: rgba(29, 34, 70, 1.0);
+}
+
+.resources-title {
+    font-family: Poppins;
+    font-size: 34px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+    line-height: 38px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* slider section */
+.resources-card {
+    height: 400px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    background-color: rgba(107, 190, 252, 0.06);
+    border-radius: 5px;
+}
+
+.blog-image {
+    width: 270px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.blog-water-drop {
+    opacity: 0.4;
+    font-family: Poppins;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.blog-water-des {
+    font-family: Poppins;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+}
+
+.blog-water-des-1 {
+    width: 259px;
+    height: 105px;
+    opacity: 0.7;
+    font-family: Poppins;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    margin-top: 52px;
+}
+
+.blog-cta-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.read-more-text {
+    font-family: Poppins;
+    font-size: 15px;
+    color: #4580c0;
+    text-decoration: none solid rgb(69, 128, 192);
+}
+
+.blog-cta {
+    background-color: rgb(255, 255, 255, 0.2);
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.6s;
+    border: 0px solid;
+    margin-left: 5px;
+}
+
+
+.owl-item {
+    margin-left: 0px !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    height: 6px !important;
+    width: 20px !important;
+    background: #87c2f9 !important;
+}
+
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-carousel {
+    width: 80%;
+}
+
+.owl-carousel.owl-theme .item {
+    height: 10rem;
+    background: #4DC7A0;
+    padding: 1rem;
+
+}
+
+.customNextBtn {
+    background-color: rgb(255, 255, 255, 0.2);
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.6s;
+    border: 0px solid;
+    padding: 20px;
+    margin: 10px;
+}
+
+.customPreviousBtn {
+    background-color: rgb(255, 255, 255, 0.2);
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.6s;
+    border: 0px solid;
+    padding: 20px;
+    margin: 10px;
+}
+
+.customNextBtn:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+.customPreviousBtn:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+    width: 90%;
+}
+
+@media screen and (width < 768px) {
+    .carousel-wrapper {
+        flex-direction: column;
+    }
+
+    .owl-carousel {
+        width: 100%;
+    }
+}
+
+
+/* Start with Magnum section */
+#startWithMagnum {
+    background-color: rgba(29, 34, 70, 1.0);
+}
+
+.start-with-magnum-container {
+    height: 350px;
+    background-image: url("./images/sec-10-opacity-bg.png");
+    background-size: cover;
+    border-radius: 10px;
+    background-position: bottom;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.start-with-magnum-mask {
+    background-image: url("./Images/sec-10-mask.svg");
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.sec-10-title {
+    font-family: Poppins;
+    font-size: 36px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+}
+
+.start-with-magnum-des {
+    opacity: 0.8;
+    font-family: Poppins;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+    transition-property: margin-bottom;
+    transition-duration: 0.5s;
+}
+
+@keyframes fadeInSectionNew {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Add the animation to the section when the class is added */
+#startWithMagnumAnimation.w3-animate-opacity-new {
+    animation: fadeInSectionNew 1s ease-in-out;
+}
+
+.start-with-magnum-container:hover {
+    .start-with-magnum-des {
+        margin-bottom: 40px;
+    }
+}
+
+
+/* Footer Section CSS */
+#footerSection {
+    background-color: #000000;
+    padding-top: 30px;
+}
+
+.site-list-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fooetr-product-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item {
+    font-family: Poppins;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.list-sub-item {
+    font-family: Poppins;
+    font-size: 14px;
+    color: #949494;
+    text-decoration: none solid rgb(148, 148, 148);
+    cursor: pointer;
+}
+
+.footer-v-line {
+    width: 70px;
+    margin-top: 35px;
+    height: 2px;
+    opacity: 0.8;
+    stroke-width: 1;
+    transform: rotate(90deg);
+}
+
+.connect-us-title {
+    font-family: Poppins;
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+}
+
+.social-icons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-container {
+    background-color: black;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    height: 33px;
+    width: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-property: background-color, border;
+    transition-duration: 1s;
+    margin: 15px;
+}
+
+.icon-container:hover {
+    background-color: #4580c0;
+    border: 1px solid black;
+}
+
+.footer-h-line-container {
+    width: 100%;
+}
+
+.footer-h-line {
+    width: 100%;
+    height: 3px;
+    opacity: 60%;
+}
+
+.footer-para {
+    opacity: 0.5;
+    font-family: Poppins;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    line-height: 20px;
+}
+
+.copy-right-container {
+    background-color: #1c1c1c;
+}
+
+.copy-right {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    opacity: 0.8;
+    font-family: Poppins;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none solid rgb(255, 255, 255);
+    margin-bottom: 0px;
+}
+
+/* Mobile CSS */
+
+@media screen and (max-width: 991px) {
+    .banner-container-fluid {
+        height: auto;
+    }
+
+    .slide-show-container {
+        flex-direction: column;
+    }
+
+    .text-navigation-container {
+        width: auto;
+        padding: 20px;
+    }
+
+    .text-tip-line {
+        height: 180px;
+        width: 22px;
+    }
+
+    .credit-score-today-card {
+        width: 100%;
+    }
+
+    .credit-score-today-text {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #creditScoreTodayCard1 {
+        margin-bottom: 20px;
+    }
+
+    #creditScoreToday {
+        height: auto;
+    }
+
+    .br-empty {
+        display: none;
+    }
+
+    .fico-title {
+        font-size: 22px;
+    }
+
+    .fico-image {
+        height: 160px;
+        width: 160px;
+    }
+
+    .list-style {
+        font-size: 12px;
+    }
+
+    .options-title {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .option-container {
+        width: 100%;
+    }
+
+    .why-credit-title {
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    #whyCreditVideoBg {
+        width: 70%;
+        height: 180px;
+        background-size: 450px;
+        background-position: center;
+    }
+
+    #whyCreditVideoBg:hover {
+        width: 80%;
+        height: 200px;
+
+    }
+
+    #optionsTitleContainer {
+        justify-content: center;
+    }
+
+    .price-card-container {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1020px) and (min-width: 992px) {
+    #whyCreditVideoBg {
+        width: 60%;
+        height: 180px;
+
+    }
+
+    .price-card-container {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 700px) {
+    .price-card-main-container {
+        width: 49% !important;
+    }
+    .tab-slider--body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Magnum Help Toggel slide */
+#magnumHelpCardsTab {
+    background-color: #1d2246;
+}
+.col-md-6 {
+    min-width: 50%;
+    width: 50%;
+  }
+  
+  .tab-slider--body {
+    width: 100%;
+  }
+  
+  .tab-slider--nav {
+   padding-top: 10px;
+  }
+  
+  .container__tabbar {
+    min-height: 600px;
+  /*   background: url('https://media.idownloadblog.com/wp-content/uploads/2019/03/WWDC-2019-Wallpaper-AR72014-desktop-v1.png'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #tab-slider-id {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    list-style-type: none;
+  }
+  
+  .primary_btn.active {
+    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+  }
+  
+  .primary_btn:not(.active) {
+      color: #000;
+  }
+  
+  .tab-slider--container {
+      color: #000;
+      padding: 0 15px;
+      letter-spacing: 0px;
+      font-size: 20px;
+      font-family: "Rubik", sans-serif;
+  }
+  
+  .img-responsive {
+    width: 60px;
+  }
+  
+  .primary_btn {
+      border: solid 2px #4458dc;
+      min-width: 120px;
+      margin-right: 20px;
+      display: inline-block;
+      color: #fff;
+      letter-spacing: 0px;
+      font-family: "Rubik", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 46px;
+      outline: none !important;
+      text-align: center;
+      cursor: pointer;
+      text-transform: uppercase;
+      border-radius: 5px;
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+  }
+
+@media screen and (min-width: 991px) {
+    .tab-slider--body {
+        display: flex;
+    }
+}
+
+.tab-slider--tabs li {
+    cursor: pointer;
+  }
+  
+  .tab-slider--tabs li.active {
+    font-weight: bold; /* For example, change the active tab's text style */
+  }
+  
+  .tab-slider--tabs .hr-line .done-arrow,
+  .tab-slider--tabs .hr-line-deposite {
+    display: none;
+  }
+  
+  .tab-slider--tabs li.active .hr-line .done-arrow,
+  .tab-slider--tabs li.active .hr-line-deposite {
+    display: block;
+  }
